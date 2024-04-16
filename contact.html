@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <!-- Questrial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- Londrina Solid -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;900&display=swap" rel="stylesheet">
+
+    <!-- Urbanist -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="contact">
+        <div class="container">
+            <div class="wrapper">
+                <div class="company-info">
+                    <ul>
+                        <li><i class="fa fa-road"></i> Instagram</li>
+                        <a href="https://www.instagram.com/bombaycraftcompany/"><img src="images\insta.svg" alt="" srcset=""></a>
+                        <li><i class="fa fa-envelope"></i> E-mail</li>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNqLRsMcnDhjLSMSTqdXTlnXRprQHnQpjLFRjfcRFMcsfpxjvjvqggSXSwjcXFbTjXKbBV"><img src="images\mail.svg" alt="" srcset=""></a>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <div class="alert">Your message has been sent</div>
+                    <form id="contactForm">
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </p>
+                        <p>
+                            <label>Locality</label>
+                            <input type="text" name="company" id="company">
+                        </p>
+                        <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        <p>
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </p>
+                        <p class="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" id="message"></textarea>
+                        </p>
+                        <p class="full">
+                            <button type="submit">Submit</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+    <section id="secod">
+        <p>We at Bombay Craft Company are more than happy to connect with you!</p>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

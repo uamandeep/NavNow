@@ -1,0 +1,442 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2.5em;
+}
+
+
+/* h1&p Font  */
+
+h1 {
+    font-family: Londrina Solid;
+    font-weight: normal;
+    font-size: 5rem;
+}
+
+p {
+    font-family: Questrial;
+    font-size: 1.5rem;
+    max-width: 900px;
+}
+
+
+/* h1&p Font  */
+
+
+/* h1&p Spacing */
+
+h1 {
+    margin: 1.2em;
+}
+
+p {
+    margin-block: 0.8em;
+}
+
+
+/* h1&p Spacing */
+
+.wrapper {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-height: 100%;
+    width: 100%;
+    background: #dba81a;
+    clip-path: circle(45px at calc(100% - 65px)50px);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked~.wrapper {
+    clip-path: circle(75%);
+}
+
+.menu-btn {
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 2;
+    right: 40px;
+    top: 25px;
+    min-height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 45%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+#active:checked~.menu-btn {
+    background: #fff;
+    color: rgb(0, 0, 0);
+}
+
+#active:checked~.menu-btn i:before {
+    content: "\f00d";
+}
+
+.wrapper ul {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+
+.wrapper ul li {
+    margin: 95px 0;
+}
+
+.wrapper ul li a {
+    z-index: 30;
+    color: none;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Pangolin;
+    color: #CD0000;
+    position: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* .wrapper ul li a:after {
+    position: inherit;
+    content: "";
+    background: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 50px;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: transform 0.2s ease;
+}
+
+.wrapper ul li a:hover:after {
+    color: rgb(175, 165, 165);
+} */
+
+.wrapper ul li a:hover {
+    color: #e0dd0c;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+}
+
+.content .title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+/* landing page */
+
+#zero {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #e9b42f;
+    display: flex;
+    place-content: center;
+}
+
+#zero p {
+    font-family: DM Sans;
+    color: #fcc419;
+}
+
+#zero img {
+    max-width: 1000px;
+}
+
+.cuntr {
+    min-height: 500px;
+    border-radius: 3%;
+    text-align: center;
+}
+
+
+/* landing page */
+
+
+/* Preloader */
+
+.wrappesr {
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    display: grid;
+    align-items: center;
+    font-family: Urbanist;
+    font-size: 2rem;
+    top: 0;
+    z-index: 99;
+}
+
+.overlay.first {
+    background: #fcc419;
+}
+
+.overlay.second {
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    font-size: 2.2rem;
+    background: #fcc419;
+    left: 33.33%;
+}
+
+.overlay.third {
+    background: #fcc419;
+    left: 66.66%;
+}
+
+
+/* Preloader */
+
+
+/* About_Us */
+
+#two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C83E3E;
+}
+
+.ho {
+    color: #FFE600;
+}
+
+.pone {
+    color: #fdc945;
+}
+
+
+/* About_Us */
+
+
+/* statistics */
+
+#one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9b42f;
+    width: 100%;
+}
+
+#one .gugu {
+    color: #CD0000;
+}
+
+#one p {
+    color: #940000;
+}
+
+
+/* statistics */
+
+
+/* Problem */
+
+#sixth {
+    display: grid;
+    overflow-x: hidden;
+    background-color: #C83E3E;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
+}
+
+#sixth img {
+    max-width: 850px;
+}
+
+#sixth h1 {
+    color: rgb(0, 0, 0);
+    padding-inline: 0.23em;
+}
+
+.oio {
+    border-radius: 2%;
+}
+
+#sixth p {
+    padding-block: 1em;
+}
+
+
+/* Problem */
+
+
+/* DustBin_Animation  */
+
+#four {
+    background-color: #e9b42f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#four h1 {
+    color: #CD0000;
+}
+
+#four p {
+    color: #aa0000;
+}
+
+#four .gif {
+    color: #2e2c2c;
+    margin-block: 1em;
+    font-size: 2.5rem;
+}
+
+.ani {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    place-content: center;
+    max-width: 60%;
+    background-color: #C83E3E;
+    min-height: 100vh;
+    border-radius: 1%;
+}
+
+.ani img {
+    max-width: 300px;
+}
+
+
+/* DustBin_Animation  */
+
+
+/* Plane_Animation  */
+
+#fivth {
+    background-color: #C83E3E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#fivth .gif {
+    color: #2e2c2c;
+    margin-block: 1em;
+    font-size: 2.5rem;
+}
+
+#fivth h1 {
+    color: #FFE600;
+}
+
+.anii {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    place-content: center;
+    max-width: 60%;
+    background-color: #e9b42f;
+    min-height: 100vh;
+    border-radius: 1%;
+}
+
+.anii img {
+    margin-inline: 10.9em;
+}
+
+
+/* Plane_Animation  */
+
+
+/* mediaquery1140 */
+
+@media screen and (max-width: 1140px) {
+    .sih1 {
+        font-size: 35px;
+    }
+    .ani {
+        padding: 5em;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 852px) {
+    #sixth img {
+        max-width: 550px;
+    }
+    #four {
+        flex-direction: column;
+    }
+    #fivth {
+        flex-direction: column;
+    }
+    .ani {
+        max-width: 100%;
+    }
+    .anii {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #four .t {
+        max-width: 270px;
+    }
+}
